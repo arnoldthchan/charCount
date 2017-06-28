@@ -7,9 +7,9 @@ var counted = {};
 function countLetters(word){
   counted = {};
   justWord = (word.split(' ').join('')); //Removes spaces and rejoins
-  console.log (word, justWord);
+
   for (var i = 0; i < justWord.length; i++){
-    var character = justWord.charAt(i);
+    var character = justWord[i];
 
     if (counted[character]){
       // Adds 1 to character already within object
