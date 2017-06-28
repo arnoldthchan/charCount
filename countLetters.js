@@ -5,9 +5,12 @@
 var counted = {};
 
 function countLetters(word){
-  justWord = (word.split(' ').join(''));
+  counted = {};
+  justWord = (word.split(' ').join('')); //Removes spaces and rejoins
+  console.log (word, justWord);
   for (var i = 0; i < justWord.length; i++){
     var character = justWord.charAt(i);
+
     if (counted[character]){
       // Adds 1 to character already within object
       // console.log('Letter Added:', justWord[i]);
@@ -23,5 +26,5 @@ function countLetters(word){
 }
 
 countLetters('lighthouse in the house');
-countLetters('aaaaassssdddffg');
 console.log(counted);
+// console.log(counted.a);
