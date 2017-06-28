@@ -35,15 +35,6 @@ var companySalesData = [
 }
 */
 
-// Read companySalesData and salesTaxRates
-// Store unique names as object inside compSales object
-// Calculate totalSales by adding sum of sales per province
-// FInd out provincal tax rate for each and multiply for totalTaxes
-// Merge like named objects together
-// output compCalc
-
-
-
 var compSales = {};
 function calculateSalesTax(salesData, taxRates){
   // console.log('\n', salesData[0].sales[0]);
@@ -69,19 +60,6 @@ function calculateSalesTax(salesData, taxRates){
   }
   return compSales;
 }
-
-
-
-  // for (compNum in salesData){
-  //   if (compCalc[key]){
-  //     //NAME ALREADY ADDED
-  //   } else {
-  //     compCalc[key] = key;
-  //     //ADD NEW NAME TO OBJECT
-  //   }
-
-  //   // console.log(salesData[compNum]);
-  // }
 
 
 var results = calculateSalesTax(companySalesData, salesTaxRates);
